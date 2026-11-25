@@ -1,0 +1,90 @@
+{
+ "id": "dcb9ca0037422b0bcef4e1bc6da328d84d925b24576a9d019ff8bf9e8980d08a",
+ "pubkey": "0e572f5e31f1de5bf570660216d05931ffb62ce7d5da079fc21a81f5b28e1e21",
+ "created_at": 1795545879,
+ "kind": 9841,
+ "tags": [
+  [
+   "a",
+   "30617:b3c95ce33dfa84326611e8b7a9c10b78df28754c38b106a4bc0196b9be5f4e4a:wyrd",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "a",
+   "30617:86a314a7ef4aa4fb4e00d738a7bec5fc96ac1312246c7c25888ae609046e6965:wyrd",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "a",
+   "30617:d84afa5ba1239500e03ce4d6a2b1e5eef1696a814c3f9cc25b50721bedef0a0f:wyrd",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "c",
+   "f279a995f7564fbfab794174c4467f7df64145d9"
+  ],
+  [
+   "w",
+   ".ngit/nix/workflows/nix.yaml",
+   "c857dfcb5f6030ab68481f8b3aa82b0d1480aa0edadbaaac11c38c147615dd4a"
+  ],
+  [
+   "o",
+   "pull_request"
+  ],
+  [
+   "E",
+   "7403b8a0c124280fbb84f4aeb2eeb313b469091e5611835c26f213a45aa510b5"
+  ],
+  [
+   "K",
+   "1618"
+  ],
+  [
+   "P",
+   "d84afa5ba1239500e03ce4d6a2b1e5eef1696a814c3f9cc25b50721bedef0a0f"
+  ],
+  [
+   "e",
+   "7403b8a0c124280fbb84f4aeb2eeb313b469091e5611835c26f213a45aa510b5"
+  ],
+  [
+   "k",
+   "1618"
+  ],
+  [
+   "p",
+   "d84afa5ba1239500e03ce4d6a2b1e5eef1696a814c3f9cc25b50721bedef0a0f"
+  ],
+  [
+   "q",
+   "39842:8a80f346c4e140b489d622abc0d1a265d29632a957446a4e70e0da0409d46f1e:0397d0fcda06ced8da77818def25fc90bb378be2b8001d080fd69a9244f47124",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "q",
+   "ea5999377eef53dc5473326f543ac9eb334206cd0bea66b03a768fcf4f84b627",
+   "wss://relay.primal.net",
+   "8a80f346c4e140b489d622abc0d1a265d29632a957446a4e70e0da0409d46f1e",
+   "job-allocation"
+  ],
+  [
+   "job",
+   "flake-check"
+  ],
+  [
+   "conclusion",
+   "startup_failure"
+  ],
+  [
+   "logs",
+   "https://blossom.odin.t5.st/aaeaa450ddada847f6feebe44cd36e2af33c05687ef9662f05e335c57c8ee942.asc"
+  ],
+  [
+   "runs_on",
+   "x86_64-linux"
+  ]
+ ],
+ "content": "=== ngit-ci execution environment ===\nEnvironment: https://blossom.odin.t5.st/2879b76518c59a0284c695cd40a37e4c216bc548d6680a9859d64129da1b9ade.json\nAdvertised resources: disk-mib=40960, memory-mib=8192, vcpus=4\nUsage: unavailable\n=== job output (bounded capture) ===\nExecution did not start; environment above describes the advertised offering.\nProvider is busy; execution did not start. Returned to the coordinator for automatic retry.",
+ "sig": "80ea62679ed2648bfb2af9f952af68670b1b0898fb2660d2d9a644be101d98d0cdd421769ec9423d03c0b9e515d5a668175b195f15abe16ef382321fc4c3c35d"
+}

@@ -1,0 +1,33 @@
+[package]
+name = "ci-pot"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A funding pot for CI on Nostr: anyone pays sats into a repository's pot, and a coordinator serves repositories whose pot is funded."
+repository = "https://github.com/Rits1272/ci-pot"
+readme = "README.md"
+keywords = ["nostr", "ci", "cashu", "bitcoin"]
+
+[dependencies]
+anyhow = "1"
+axum = "0.8"
+# cdk and cdk-sqlite must be the same release, so both are pinned.
+cdk = { version = "=0.18.3", default-features = false, features = ["wallet"] }
+cdk-sqlite = { version = "=0.18.3", default-features = false, features = ["wallet"] }
+clap = { version = "4", features = ["derive", "env"] }
+futures-util = "0.3"
+hex = "0.4"
+nostr = { version = "0.45", features = ["os-rng"] }
+rand = "0.8"
+# The same rusqlite that cdk-sqlite uses: only one copy of SQLite can be linked.
+rusqlite = { version = "0.31", features = ["bundled"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "std"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.30", features = ["rustls-tls-webpki-roots"] }
+
+[dev-dependencies]
+reqwest = { version = "0.12", default-features = false, features = ["json"] }
+tempfile = "3"

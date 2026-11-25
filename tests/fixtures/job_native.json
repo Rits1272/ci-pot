@@ -1,0 +1,103 @@
+{
+ "id": "821513382c5d46e3aae19f77e6585bb8b5168723ed856073dede9306d3b36cc0",
+ "pubkey": "0e572f5e31f1de5bf570660216d05931ffb62ce7d5da079fc21a81f5b28e1e21",
+ "created_at": 1795560363,
+ "kind": 9841,
+ "tags": [
+  [
+   "a",
+   "30617:d84afa5ba1239500e03ce4d6a2b1e5eef1696a814c3f9cc25b50721bedef0a0f:wyrd",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "a",
+   "30617:b3c95ce33dfa84326611e8b7a9c10b78df28754c38b106a4bc0196b9be5f4e4a:wyrd",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "a",
+   "30617:86a314a7ef4aa4fb4e00d738a7bec5fc96ac1312246c7c25888ae609046e6965:wyrd",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "c",
+   "fcf26616c575029334a552eff55dff0b431fae5e"
+  ],
+  [
+   "w",
+   ".ngit/nix/workflows/rust-slow.yaml",
+   "74f64f3987b7f169f69726f347c866f8fba6c3cdfe407d0664d611afa743525c"
+  ],
+  [
+   "o",
+   "push"
+  ],
+  [
+   "r",
+   "refs/heads/master"
+  ],
+  [
+   "step",
+   "nix-realise",
+   "Realise Nix outputs",
+   "17434",
+   "669762",
+   "success"
+  ],
+  [
+   "f",
+   "disk-mib:eq:40960"
+  ],
+  [
+   "f",
+   "memory-mib:eq:8192"
+  ],
+  [
+   "f",
+   "vcpus:eq:4"
+  ],
+  [
+   "x",
+   "2879b76518c59a0284c695cd40a37e4c216bc548d6680a9859d64129da1b9ade",
+   "https://blossom.odin.t5.st/2879b76518c59a0284c695cd40a37e4c216bc548d6680a9859d64129da1b9ade.json"
+  ],
+  [
+   "q",
+   "39842:8a80f346c4e140b489d622abc0d1a265d29632a957446a4e70e0da0409d46f1e:10f2cda66e860c44dcae6bf03332a301411a05790ee3cd5ac9310526e88aa158",
+   "wss://grasp.t5.st"
+  ],
+  [
+   "q",
+   "e6d0602eef76e4490c05ab1f3b66c6e0be48e115cd912d4979f2086e194ec960",
+   "wss://relay.primal.net",
+   "8a80f346c4e140b489d622abc0d1a265d29632a957446a4e70e0da0409d46f1e",
+   "job-allocation"
+  ],
+  [
+   "job",
+   "slow-tests"
+  ],
+  [
+   "conclusion",
+   "success"
+  ],
+  [
+   "logs",
+   "https://blossom.odin.t5.st/a705411f2e8b38c2dc618d82655a9718539f464372c95056e70021fb53ce3dad.asc"
+  ],
+  [
+   "started_at",
+   "1795559669"
+  ],
+  [
+   "exit_code",
+   "0"
+  ],
+  [
+   "runs_on",
+   "x86_64-linux"
+  ]
+ ],
+ "content": "[log-tail omitted=865521]\ncopying path '/nix/store/hf7nk3rmdid5iv7r1jfsb8rf65a8am19-clippy-preview-1.91.0-x86_64-unknown-linux-gnu' from 'http://10.99.0.1:17845/build-cache/resolve/54fb5356269a40e0c9501eccbdd38ac4e9ba1946a09a9d5fb6d3fd76991ebc53/nix'...\ncopying path '/nix/store/lp8m9rh8wsndp8xygw0z62k6zb677v4k-rust-analyzer-preview-1.91.0-x86_64-unknown-linux-gnu' from 'http://10.99.0.1:17845/build-cache/resolve/54fb5356269a40e0c9501eccbdd38ac4e9ba1946a09a9d5fb6d3fd76991ebc53/nix'...\ncopying path '/nix/store/l9ip2485s9vwxcfqp3rsfvx5kg0w1var-rustfmt-preview-1.91.0-x86_64-unknown-linux-gnu' from 'http://10.99.0.1:17845/build-cache/resolve/54fb5356269a40e0c9501eccbdd38ac4e9ba1946a09a9d5fb6d3fd76991ebc53/nix'...\ncopying path '/nix/store/fbixkslsmsk1fg20d1i1n3nzi4nax8dc-webkitgtk-2.52.6+abi=4.1-dev' from 'http://10.99.0.1:17845/build-cache/resolve/54fb5356269a40e0c9501eccbdd38ac4e9ba1946a09a9d5fb6d3fd76991ebc53/nix'...\nbuilding '/nix/store/nqfa71hxi0j50iyi5bmlxh05qpg4ib44-rust-default-1.91.0.drv'...\nbuilding '/nix/store/jbsbbihpx5998p77iwypvx4379y5hx15-wyrd-nextest-0.3.0-alpha.drv'...\n",
+ "sig": "2f2a87aeff8e0d3013771861508db404815eb34ec91097c4a408d05b5569111bb2b011d595b6d6ce6efba11c53b34fc78cbeece148039da8188a244e300317c9"
+}

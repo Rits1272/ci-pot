@@ -1,0 +1,108 @@
+{
+ "id": "588e3f6e1e4c206409506887b80f7c8741ba23864b6bdafe8ddc891edca08426",
+ "pubkey": "ac26c15e8b7b062514d3f9cfd77891a39368ecb99f8dbbcba2e8a6a2c8b902af",
+ "created_at": 1795596386,
+ "kind": 9841,
+ "tags": [
+  [
+   "a",
+   "30617:66675158e6338fe89fda418e42a0bf2a7a2b132504dd347f015a18971b644430:darkmatter-linux"
+  ],
+  [
+   "a",
+   "30617:37c79b44f72f3cab0c16f46cf519abf8367c9101915bf4560a13e868275b1140:darkmatter-linux"
+  ],
+  [
+   "c",
+   "db72427ba6c2f09d6952a8d8906ebec0941e445a"
+  ],
+  [
+   "w",
+   ".ngit/act/workflows/pr-precommit.yml",
+   "38eef5f8e83af77dc6ff85442645e52eda9d740c5d8c9e19022ad895fea6eefa"
+  ],
+  [
+   "o",
+   "pull_request"
+  ],
+  [
+   "step",
+   "0",
+   "actions/checkout@v4",
+   "",
+   "514",
+   "success"
+  ],
+  [
+   "step",
+   "1",
+   "Install system deps",
+   "",
+   "960",
+   "success"
+  ],
+  [
+   "step",
+   "2",
+   "Run pre-commit hook against the proposal",
+   "",
+   "1671",
+   "success"
+  ],
+  [
+   "job",
+   "pre-commit"
+  ],
+  [
+   "name",
+   "pre-commit/pre-commit hook"
+  ],
+  [
+   "conclusion",
+   "success"
+  ],
+  [
+   "logs",
+   "https://cyberguy-blossom.exe.xyz/d9f8969dd98a8aad314c7baa561ff0626cd81ce222b8dafea7bbd14107796d14.txt"
+  ],
+  [
+   "queued_at",
+   "1795596232"
+  ],
+  [
+   "started_at",
+   "1795596232"
+  ],
+  [
+   "q",
+   "39842:ac26c15e8b7b062514d3f9cfd77891a39368ecb99f8dbbcba2e8a6a2c8b902af:fa4414eb39a12d8e5c032129194590b9dfe3ec1cc767fe18afce113355b9e8dc",
+   "wss://relay.cyberguy.fyi"
+  ],
+  [
+   "E",
+   "a137f787514565bff9085e39f7f7afbed6b2458813820b6248180be8cabcf6fc"
+  ],
+  [
+   "K",
+   "1618"
+  ],
+  [
+   "P",
+   "66675158e6338fe89fda418e42a0bf2a7a2b132504dd347f015a18971b644430"
+  ],
+  [
+   "e",
+   "a137f787514565bff9085e39f7f7afbed6b2458813820b6248180be8cabcf6fc"
+  ],
+  [
+   "k",
+   "1618"
+  ],
+  [
+   "p",
+   "66675158e6338fe89fda418e42a0bf2a7a2b132504dd347f015a18971b644430"
+  ]
+ ],
+ "content": "\u2b50 Run Set up job\n\ud83d\ude80  Start image=localhost/wn-native-pilot\n  \ud83d\udc33  docker pull image=localhost/wn-native-pilot platform= username= forcePull=false\n  \ud83d\udc33  docker create image=localhost/wn-native-pilot platform= entrypoint=[\"tail\" \"-f\" \"/dev/null\"] cmd=[] network=\"host\"\n  \ud83d\udc33  docker run image=localhost/wn-native-pilot platform= entrypoint=[\"tail\" \"-f\" \"/dev/null\"] cmd=[] network=\"host\"\n  \ud83d\udc33  docker exec cmd=[node --no-warnings -e console.log(process.execPath)] user= workdir=\n  \u2705  Success - Set up job\n\u2b50 Run Main actions/checkout@v4\n  \ud83d\udc33  docker cp src=/tmp/ngit-ci-job-fa4414eb39a12d8e5c032129194590b9dfe3ec1cc767fe18afce113355b9e8dc/repo/. dst=/tmp/ngit-ci-job-fa4414eb39a12d8e5c032129194590b9dfe3ec1cc767fe18afce113355b9e8dc/repo\n  \u2705  Success - Main actions/checkout@v4 [514.996345ms]\n\u2b50 Run Main Install system deps\n  \ud83d\udc33  docker exec cmd=[bash -e /var/run/act/workflow/1] user= workdir=\n  \u2705  Success - Main Install system deps [960.880675ms]\n\u2b50 Run Main Run pre-commit hook against the proposal\n  \ud83d\udc33  docker exec cmd=[bash -e /var/run/act/workflow/2] user= workdir=\npre-commit: msgfmt --check passed on staged catalogs.\n\npre-commit: warning: install odinfmt to auto-format staged Odin files.\n\npre-commit: warning: install clang-format to auto-format staged C files.\n\n  \u2705  Success - Main Run pre-commit hook against the proposal [1.671298596s]\n\u2b50 Run Complete job\nCleaning up container for job pre-commit hook\n  \u2705  Success - Complete job\n\ud83c\udfc1  Job succeeded",
+ "sig": "ec13a91f719b1977d4adfbb9ebf600606e419f9e84a9d5f0a8a176b0a82545ef4f4b548a0dd4e6ecb683f781d918d22beff1ce1b282729d9ee7d0863f0c6a4b4"
+}

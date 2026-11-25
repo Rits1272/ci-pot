@@ -1,0 +1,19 @@
+{
+ "id": "f2e245fe7d69ba06f8e6cd7ea75b381e566055c76a3a0dc5e8f8d39ee625d316",
+ "pubkey": "66675158e6338fe89fda418e42a0bf2a7a2b132504dd347f015a18971b644430",
+ "created_at": 1795252508,
+ "kind": 9843,
+ "tags": [
+  [
+   "a",
+   "30617:66675158e6338fe89fda418e42a0bf2a7a2b132504dd347f015a18971b644430:darkmatter-linux",
+   "wss://relay.cyberguy.fyi"
+  ],
+  [
+   "p",
+   "ebec18d864068556d455844d4971505c3f5f838a6b6a3077049faf9903f0eee4"
+  ]
+ ],
+ "content": "",
+ "sig": "51e159a18db16a7e666489b51596fa9f1585fca7d49983b4b69e0c9302a070feca58133184b91774dbf43d927bf6fca6a5ddabcce6b9364c75d117cc3f6b26dc"
+}
