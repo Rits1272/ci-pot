@@ -1,8 +1,36 @@
 # ci-pot
 
-A funding pot for CI on Nostr. Anyone pays sats into a repository's pot, and a coordinator runs that repository's CI while the pot is funded.
+A prepaid meter for CI on Nostr. Someone pays sats into a project's pot, and the project's tests get run until the pot is empty.
 
 > **Status: a working prototype, not a product.** It has been run with fake money against real job data. It has not yet run beside a live coordinator. It is not affiliated with or endorsed by the ngit project. The name is a working name.
+
+![A terminal recording of ci-pot taking a deposit, admitting a repository, charging nine jobs and showing what the operator earned](assets/demo.svg)
+
+*A replay of a real run on 26 November 2026: fake sats from a local test mint, charged against nine real Job Results for the GitWorkshop repository. Reproduce it with `scripts/live-trial.sh`.*
+
+## In plain words
+
+Alice keeps her project's code on Nostr instead of GitHub. Each time she changes the code, she wants its tests to run automatically. That is CI, and on Nostr the tests have to run on somebody's computer.
+
+Bob runs such a computer. It costs him money, so he only runs tests for his own projects. Alice can run her own server, or ask Bob for a favour.
+
+`ci-pot` sits beside Bob's server and works like a prepaid electricity meter:
+
+1. Alice, or anyone who likes her project, pays some sats into a **pot** for it.
+2. Bob's server sees the pot is funded and starts running her tests.
+3. Each run takes a little out of the pot, by the second.
+4. When the pot is empty, the server stops until someone tops it up.
+
+Alice gets CI without asking anyone. Bob is paid for the compute. Neither needs an account.
+
+| Word | Meaning here |
+|---|---|
+| CI | Running a project's tests automatically on every change. |
+| Nostr git | Code hosted through Nostr ([NIP-34](https://nips.nostr.com/34)) with tools such as [ngit](https://ngit.dev), not on GitHub. |
+| Grasp CI | The way CI runs for that code ([NIP-C1](https://ngit.dev/protocol/ci)). |
+| Coordinator | The server that watches a repository and schedules its test runs. Bob's computer, above. |
+| Pot | A prepaid balance for one repository at one coordinator. |
+| Sats, Cashu | Sats are small units of bitcoin. [Cashu](https://cashu.space) is a way to hand them over as a token, with no account. |
 
 ## Why
 
@@ -149,10 +177,11 @@ The tests need no network. To see it work with fake money and real jobs:
 ```sh
 COORDINATOR=<a coordinator's public key> \
 REPO=30617:<maintainer key in hex>:<repository name> \
+REPLAY_HOURS=24 \
 ./scripts/live-trial.sh
 ```
 
-The trial starts a throwaway local mint whose Lightning backend is fake, funds one pot, and charges that coordinator's real jobs as they appear on the public relay. It only reads public events. The comment at the top of the script explains how to pick the two values.
+The trial starts a throwaway local mint whose Lightning backend is fake, funds one pot, and charges that coordinator's real Job Results from the public relay. It only reads public events. `REPLAY_HOURS` also charges results from the last hours, so a quiet hour still shows something. The comment at the top of the script explains how to pick the values.
 
 ## Run it beside a coordinator
 

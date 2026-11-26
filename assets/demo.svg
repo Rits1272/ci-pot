@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 598" width="900" height="598" role="img"
+     aria-label="Terminal recording: a supporter pays 1000 sat into a repository's pot, the repository goes on the coordinator's list, nine real CI jobs are charged 97 sat, and the operator's wallet shows 97 sat earned.">
+<style>
+text{font:14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#d7dee6;white-space:pre}
+.note{fill:#8b98a5} .p{fill:#5bb8dd} .c{fill:#ffffff;font-weight:600} .out{fill:#d7dee6}
+.title{font:13px system-ui,sans-serif;fill:#8b98a5}
+@keyframes l0{0%,2.38%{opacity:0}2.98%,96.83%{opacity:1}100%{opacity:0}}.l0{animation:l0 25.2s linear infinite}@keyframes l1{0%,7.14%{opacity:0}7.74%,96.83%{opacity:1}100%{opacity:0}}.l1{animation:l1 25.2s linear infinite}@keyframes l2{0%,11.11%{opacity:0}11.71%,96.83%{opacity:1}100%{opacity:0}}.l2{animation:l2 25.2s linear infinite}@keyframes l4{0%,16.67%{opacity:0}17.26%,96.83%{opacity:1}100%{opacity:0}}.l4{animation:l4 25.2s linear infinite}@keyframes l5{0%,20.63%{opacity:0}21.23%,96.83%{opacity:1}100%{opacity:0}}.l5{animation:l5 25.2s linear infinite}@keyframes l7{0%,26.98%{opacity:0}27.58%,96.83%{opacity:1}100%{opacity:0}}.l7{animation:l7 25.2s linear infinite}@keyframes l8{0%,30.95%{opacity:0}31.55%,96.83%{opacity:1}100%{opacity:0}}.l8{animation:l8 25.2s linear infinite}@keyframes l9{0%,34.13%{opacity:0}34.72%,96.83%{opacity:1}100%{opacity:0}}.l9{animation:l9 25.2s linear infinite}@keyframes l11{0%,41.27%{opacity:0}41.87%,96.83%{opacity:1}100%{opacity:0}}.l11{animation:l11 25.2s linear infinite}@keyframes l12{0%,45.24%{opacity:0}45.83%,96.83%{opacity:1}100%{opacity:0}}.l12{animation:l12 25.2s linear infinite}@keyframes l13{0%,50.00%{opacity:0}50.60%,96.83%{opacity:1}100%{opacity:0}}.l13{animation:l13 25.2s linear infinite}@keyframes l14{0%,51.39%{opacity:0}51.98%,96.83%{opacity:1}100%{opacity:0}}.l14{animation:l14 25.2s linear infinite}@keyframes l15{0%,52.78%{opacity:0}53.37%,96.83%{opacity:1}100%{opacity:0}}.l15{animation:l15 25.2s linear infinite}@keyframes l16{0%,54.17%{opacity:0}54.76%,96.83%{opacity:1}100%{opacity:0}}.l16{animation:l16 25.2s linear infinite}@keyframes l17{0%,55.56%{opacity:0}56.15%,96.83%{opacity:1}100%{opacity:0}}.l17{animation:l17 25.2s linear infinite}@keyframes l19{0%,62.70%{opacity:0}63.29%,96.83%{opacity:1}100%{opacity:0}}.l19{animation:l19 25.2s linear infinite}@keyframes l20{0%,66.67%{opacity:0}67.26%,96.83%{opacity:1}100%{opacity:0}}.l20{animation:l20 25.2s linear infinite}@keyframes l21{0%,70.24%{opacity:0}70.83%,96.83%{opacity:1}100%{opacity:0}}.l21{animation:l21 25.2s linear infinite}@keyframes l22{0%,71.63%{opacity:0}72.22%,96.83%{opacity:1}100%{opacity:0}}.l22{animation:l22 25.2s linear infinite}@keyframes l23{0%,73.02%{opacity:0}73.61%,96.83%{opacity:1}100%{opacity:0}}.l23{animation:l23 25.2s linear infinite}
+@media (prefers-reduced-motion: reduce){text{animation:none!important;opacity:1!important}}
+</style>
+<rect width="900" height="598" rx="10" fill="#0f151b"/>
+<rect width="900" height="36" rx="10" fill="#161e26"/><rect y="26" width="900" height="10" fill="#161e26"/>
+<circle cx="22" cy="18" r="5.5" fill="#3a4753"/><circle cx="42" cy="18" r="5.5" fill="#3a4753"/><circle cx="62" cy="18" r="5.5" fill="#3a4753"/>
+<text class="title" x="450.0" y="23" text-anchor="middle">ci-pot with fake sats and real job results</text>
+<text class="l0 note" x="26" y="64"># 1. A supporter pays 1000 sat into a repository&#x27;s pot. No account needed.</text>
+<text class="l1" x="26" y="85"><tspan class="p">$ </tspan><tspan class="c">curl -X POST $POT/pots/30617:a008def1…:gitworkshop -d &#x27;{&quot;token&quot;:&quot;cashuB…&quot;}&#x27;</tspan></text>
+<text class="l2 out" x="26" y="106">accepted: the pot now holds 1000 sat</text>
+<text class="l4 note" x="26" y="148"># The same token cannot be paid in twice.</text>
+<text class="l5 out" x="26" y="169">refused: this token was already paid in</text>
+<text class="l7 note" x="26" y="211"># 2. The repository goes on the coordinator&#x27;s list.</text>
+<text class="l8" x="26" y="232"><tspan class="p">$ </tspan><tspan class="c">cat repos.env</tspan></text>
+<text class="l9 out" x="26" y="253">NGIT_CI_REPOS=npub15qydau2…2exs5cyejr/gitworkshop</text>
+<text class="l11 note" x="26" y="295"># 3. Each finished job is charged to the pot, by the second.</text>
+<text class="l12" x="26" y="316"><tspan class="p">$ </tspan><tspan class="c">curl $POT/pots/30617:a008def1…:gitworkshop</tspan></text>
+<text class="l13 out" x="26" y="337">balance 902 sat   spent 97 sat   jobs charged 9   served now: yes</text>
+<text class="l14 out" x="26" y="358">  charge      10.8 sat   4308554f1b63a13d</text>
+<text class="l15 out" x="26" y="379">  charge      13.3 sat   ac7b47516d4f06e5</text>
+<text class="l16 out" x="26" y="400">  charge       8.3 sat   eab99a5860ab7bea</text>
+<text class="l17 out" x="26" y="421">  charge      11.1 sat   63989ec5c08411a6</text>
+<text class="l19 note" x="26" y="463"># 4. The operator is paid for the compute.</text>
+<text class="l20" x="26" y="484"><tspan class="p">$ </tspan><tspan class="c">ci-pot wallet --mint $MINT balance</tspan></text>
+<text class="l21 out" x="26" y="505">     1000 sat  in the wallet</text>
+<text class="l22 out" x="26" y="526">      903 sat  held for pots (paid in, not yet used)</text>
+<text class="l23 out" x="26" y="547">       97 sat  earned, free to withdraw</text>
+</svg>
